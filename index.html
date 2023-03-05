@@ -9,13 +9,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
 </head>
 
 <body>
     <header>
         <h3>💻 Luciano Ezequiel Lasala</h3>
+        <img class="menu-icon" src="./assets/menu.png">
+        <nav>
+            <ul class="lista">
+                <li id="sobre-mi-link">Sobre mí</li>
+                <li id="proyectos-link">Proyectos</li>
+                <li id="contacto-link">Contacto</li>
+            </ul>
+        </nav>
     </header>
-    <section class="uno">
+    <section class="bienvenido">
         <div class="caja-central">
             <div class="caja-cara">
                 <img class="cara" src="./assets/imagen-foto.jpg" alt="Luciano Lasala">            
@@ -23,19 +33,19 @@
             <div class="caja-presentacion">
                 <h1>Bienvenido 🚀</h1>
                 <p class="presentacion">
-                    Hola!, como estas?, mi nombre es Luciano pero me dicen el colo, bienvenido a mi portfolio personal.
-                    Aqui encotraras un resumen de mi, links a algunos de mis proyectos.
+                    Hola!, ¿cómo estás?, mi nombre es Luciano, pero me dicen "el colo", bienvenido a mi portfolio personal.
+                    Aquí encontraras un resumen de mí, links a algunos de mis proyectos.
                 </p>
             </div>
         </div>
     </section>
-    <section class="dos">
+    <section class="sobre-mi" id="section-sobre-mi">
         <h2>Sobre mí</h2>
         <p>
-            Soy analista universitario de sistemas egresado en la UTN de La Plata y trabajo como  
+            Soy analista universitario de sistemas egresado en la UTN de La Plata y actualmente trabajo como  
             desarrollador Front-End con experiencia en Angular +2, Html, Css y TypeScript.
-            Tambien he trabajado como desarrollador full stack usando Node js, Express y SQL Server como motor
-            de bases de datos. Me encanta aprender y ampliar mi stack tecnologico, actualmente estoy realizando cursos
+            También he trabajado como desarrollador full stack usando Node js, Express y SQL Server como motor
+            de bases de datos. Me encanta aprender y ampliar mi stack tecnológico, actualmente estoy realizando cursos
             de React.js y Python en la plataforma Udemy.
         </p>
         <h2>Aptitudes</h2>
@@ -44,15 +54,19 @@
         </p>
         <div class="aptitudes">
             <div class="tech-list">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" class="tech" alt="angular">
-                <img src="https://assets.stickpng.com/images/5847f5bdcef1014c0b5e489c.png" class="tech" alt="html-5">
-                <img src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" class="tech" alt="css-3">
-                
+                <img class="tech" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png" class="tech" alt="angular">
+                <img class="tech" src="https://assets.stickpng.com/images/5847f5bdcef1014c0b5e489c.png" alt="html-5">
+                <img class="tech" src="https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png" alt="css-3">
             </div>
             <div class="tech-list">
-                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png" class="tech" alt="node.js">
-                <img src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png" class="tech" alt="typeScript">
-                <img src="https://img.icons8.com/color/480/microsoft-sql-server.png" class="tech" alt="sql-server">
+                <img class="tech" src="https://cdn.freebiesupply.com/logos/thumbs/2x/nodejs-1-logo.png"  alt="node.js">
+                <img class="tech" src="https://w7.pngwing.com/pngs/915/519/png-transparent-typescript-hd-logo-thumbnail.png" alt="typeScript">
+                <img class="tech" src="https://img.icons8.com/color/480/microsoft-sql-server.png" alt="sql-server">
+            </div>
+            <div class="tech-list">
+                <img class="tech" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/800px-React.svg.png" alt="react">
+                <img class="tech" src="https://damiandeluca.com.ar/wp-content/uploads/2018/03/firebase.png" alt="firebase">
+                <img class="tech" src="https://victorroblesweb.es/wp-content/uploads/2016/11/mongodb.png" alt="mongodb">
             </div>
         </div>
         <h2>Algunos cursos realizados</h2>
@@ -65,12 +79,12 @@
             <li>Shell Bash Linux, comandos para el manejo de texto (Udemy)</li>
         </ul>
     </section>
-    <section class="tres">
+    <section class="mis-proyectos" id="section-proyectos">
         <h2>Mis Proyectos</h2>
         <div class="proyectos">
             <div class="card">
                 <h3>Juego de pokemon</h3>
-                <img src="https://imagenes.elpais.com/resizer/Wv9BlwbAvp6mH6aJDwuZH2JCeh8=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/SMAGZKMKUVK5UPZUPANHV4TYBA.jpg" alt="maxiprograma.com">
+                <img src="https://imagenes.elpais.com/resizer/Wv9BlwbAvp6mH6aJDwuZH2JCeh8=/414x0/cloudfront-eu-central-1.images.arcpublishing.com/prisa/SMAGZKMKUVK5UPZUPANHV4TYBA.jpg" alt="pokemons">
                 <p>
                     Juego de Memory usando PokeApi
                 </p>
@@ -78,23 +92,23 @@
             </div>
             <div class="card">
                 <h3>Juego de dados</h3>
-                <img src="https://st.depositphotos.com/1765561/1533/i/600/depositphotos_15339013-stock-photo-shiny-red-dice.jpg" alt="Maxi Programa en YouTube">
+                <img src="https://st.depositphotos.com/1765561/1533/i/600/depositphotos_15339013-stock-photo-shiny-red-dice.jpg" alt="dados">
                 <p>
                     Juego de lanzar dado
                 </p>
                 <a href="https://cololasala.github.io/Dados-Game/" target="_blank">Jugar</a>
             </div>
             <div class="card">
-                <h3>Productos limpieza app</h3>
-                <img src="https://img.freepik.com/vector-premium/articulos-hogar-productos-limpieza_313437-303.jpg" alt="productos-limpieza">
+                <h3>Juego Tic Tac Toe</h3>
+                <img src="https://cdn-icons-png.flaticon.com/512/2911/2911080.png">
                 <p>
-                    Aplicacion para manejo de tienda de productos de limpieza y hogar
+                    Clásico juego versus la máquina
                 </p>
-                <a href="#" target="_blank">Ver</a>
+                <a href="https://cololasala.github.io/Tic-Tac-Toe---AI/" target="_blank" alt="tic-tac-tpe">Jugar</a>
             </div>
         </div>
     </section>
-    <footer>
+    <footer id="contacto-footer">
         <h2>Contactame</h2>
             <div class="contacto">
                 <a href="https://www.linkedin.com/in/luciano-lasala-504704177/" target="_blank">
@@ -107,4 +121,26 @@
             </div>
     </footer>
 </body>
+<script type="text/javascript">
+
+    $('.menu-icon').click(function() {
+        $('header nav').slideToggle();
+    });
+
+    $("#sobre-mi-link").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#section-sobre-mi").offset().top},
+        'slow');
+    });
+    $("#proyectos-link").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#section-proyectos").offset().top},
+        'slow');
+    });
+    $("#contacto-link").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#contacto-footer").offset().top},
+        'slow');
+    });
+</script>
 </html>
